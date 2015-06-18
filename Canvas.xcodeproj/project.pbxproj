@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED73F8491B117C6D00FE7A66 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED73F8481B117C6D00FE7A66 /* Common.swift */; };
 		ED76C9E51B0F7D30007D155D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED76C9E41B0F7D30007D155D /* AppDelegate.swift */; };
 		ED76C9E71B0F7D30007D155D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED76C9E61B0F7D30007D155D /* ViewController.swift */; };
 		ED76C9EA1B0F7D30007D155D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED76C9E81B0F7D30007D155D /* Main.storyboard */; };
 		ED76C9EC1B0F7D30007D155D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED76C9EB1B0F7D30007D155D /* Images.xcassets */; };
 		ED76C9EF1B0F7D30007D155D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED76C9ED1B0F7D30007D155D /* LaunchScreen.xib */; };
 		ED76C9FB1B0F7D30007D155D /* CanvasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED76C9FA1B0F7D30007D155D /* CanvasTests.swift */; };
+		ED76CA051B0F7EBD007D155D /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED76CA041B0F7EBD007D155D /* CanvasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED73F8481B117C6D00FE7A66 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		ED76C9DF1B0F7D30007D155D /* Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED76C9E31B0F7D30007D155D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED76C9E41B0F7D30007D155D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		ED76C9F41B0F7D30007D155D /* CanvasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED76C9F91B0F7D30007D155D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED76C9FA1B0F7D30007D155D /* CanvasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasTests.swift; sourceTree = "<group>"; };
+		ED76CA041B0F7EBD007D155D /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				ED76C9E41B0F7D30007D155D /* AppDelegate.swift */,
+				ED76CA041B0F7EBD007D155D /* CanvasViewController.swift */,
 				ED76C9E61B0F7D30007D155D /* ViewController.swift */,
 				ED76C9E81B0F7D30007D155D /* Main.storyboard */,
+				ED73F8481B117C6D00FE7A66 /* Common.swift */,
 				ED76C9EB1B0F7D30007D155D /* Images.xcassets */,
 				ED76C9ED1B0F7D30007D155D /* LaunchScreen.xib */,
 				ED76C9E21B0F7D30007D155D /* Supporting Files */,
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED73F8491B117C6D00FE7A66 /* Common.swift in Sources */,
 				ED76C9E71B0F7D30007D155D /* ViewController.swift in Sources */,
+				ED76CA051B0F7EBD007D155D /* CanvasViewController.swift in Sources */,
 				ED76C9E51B0F7D30007D155D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +417,7 @@
 				ED76CA001B0F7D30007D155D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED76CA011B0F7D30007D155D /* Build configuration list for PBXNativeTarget "CanvasTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				ED76CA031B0F7D30007D155D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

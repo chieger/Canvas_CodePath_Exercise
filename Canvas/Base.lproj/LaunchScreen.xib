@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6214" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6207"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,31 +10,49 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Charles Hieger. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canvas" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="140" width="441" height="43"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="tongue" translatesAutoresizingMaskIntoConstraints="NO" id="pX9-xe-b28">
+                    <rect key="frame" x="134" y="135" width="211" height="211"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="211" id="1w7-Mk-DMP"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="211" id="CwP-Oa-w7g"/>
+                        <constraint firstAttribute="width" constant="211" id="NQ3-OW-ODx"/>
+                        <constraint firstAttribute="height" constant="211" id="Qrd-po-buj"/>
+                        <constraint firstAttribute="width" constant="211" id="vJF-Zd-UKz"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="211" id="zjF-Hu-f2V"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1w7-Mk-DMP"/>
+                            <exclude reference="CwP-Oa-w7g"/>
+                            <exclude reference="vJF-Zd-UKz"/>
+                            <exclude reference="zjF-Hu-f2V"/>
+                        </mask>
+                    </variation>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="5cJ-9S-tgC"/>
-                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstAttribute="trailing" secondItem="pX9-xe-b28" secondAttribute="trailing" constant="135" id="ASY-7I-ySO"/>
+                <constraint firstItem="pX9-xe-b28" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="135" id="Oqr-Ew-goZ"/>
+                <constraint firstItem="pX9-xe-b28" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="134" id="ccW-OG-Rt0"/>
+                <constraint firstItem="pX9-xe-b28" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="dLC-D7-Vuw"/>
+                <constraint firstItem="pX9-xe-b28" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="134" id="nsn-dm-CPM"/>
+                <constraint firstAttribute="bottom" secondItem="pX9-xe-b28" secondAttribute="bottom" constant="134" id="rhG-ht-t0c"/>
+                <constraint firstAttribute="centerY" secondItem="pX9-xe-b28" secondAttribute="centerY" constant="-0.5" id="y91-2r-vAs"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="dLC-D7-Vuw"/>
+                    <exclude reference="nsn-dm-CPM"/>
+                    <exclude reference="y91-2r-vAs"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
+    <resources>
+        <image name="tongue" width="60" height="60"/>
+    </resources>
 </document>
